@@ -3,7 +3,7 @@ import time
 
 
 def my_logger(orig_func):
-    import logging
+    from language import logging
     logging.basicConfig(filename='{}.log'.format(orig_func.__name__), level=logging.INFO)
 
     @wraps(orig_func)

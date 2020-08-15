@@ -1,6 +1,3 @@
-import logging
-import employee
-
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
 

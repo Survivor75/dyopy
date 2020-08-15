@@ -1,4 +1,4 @@
-import mem_profile
+from language import mem_profile
 import random
 import time
 
