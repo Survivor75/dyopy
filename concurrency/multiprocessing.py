@@ -2,9 +2,7 @@ import time
 import concurrent.futures
 from PIL import Image, ImageFilter
 
-img_names = [
-
-]
+img_names = []
 
 t1 = time.perf_counter()
 
