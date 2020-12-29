@@ -1,9 +1,16 @@
-from celery import Celery
-
-app = Celery('tasks')
-app.config_from_object('celeryconfig')
+from .celery import app
 
 
 @app.task
 def add(x, y):
     return x + y
+
+
+@app.task
+def mul(x, y):
+    return x * y
+
+
+@app.task
+def xsum(numbers):
+    return sum(numbers)
