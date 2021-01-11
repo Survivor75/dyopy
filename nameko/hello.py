@@ -1,3 +1,5 @@
+from time import sleep
+
 from nameko.rpc import rpc
 
 
@@ -6,4 +8,5 @@ class GreetingService:
 
     @rpc
     def hello(self, name):
+        sleep(5)
         return "Hello, {}!".format(name)
